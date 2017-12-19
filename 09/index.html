@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <title>Todos</title>
+  <link rel="stylesheet" href="todos.css">
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>Todo List</h1>
+
+    <!--5.submit을 막기위해 retrun false를 넣는다. 이벤트 중복을 방지하는것인가?-->
+    <form class="new-task" onsubmit="return false">
+      <!--2.id 선언-->
+      <input id="String" type="text" name="text" placeholder="할일을 입력하세요">
+    </form>
+  </header>
+  <!--8.화면에 보여줬던 예시 삭제후 진짜 리스트(ID와 같이)추가-->
+  <ul id="todoList"></ul>
+  <!--<ul class="list">-->
+    <!--<li>-->
+      <!--<button class="delete">×</button>-->
+      <!--<input type="checkbox" class="toggle-checked">-->
+      <!--<span class="text">JS공부하기</span>-->
+    <!--</li>-->
+  <!--</ul>-->
+
+</div>
+
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="todos.js"></script>
+
+</body>
+</html>
